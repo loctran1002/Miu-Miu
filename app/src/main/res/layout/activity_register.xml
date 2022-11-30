@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".activities.RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.95"
+        android:background="@drawable/background1"
+        android:backgroundTint="@color/background"
+        android:backgroundTintMode="multiply"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/frame_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="40dp"
+        android:alpha="0.55"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/background" />
+
+    <ImageView
+        android:id="@+id/ic_register"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/frame_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_register"
+        app:layout_constraintEnd_toEndOf="@+id/frame_register"
+        app:layout_constraintStart_toStartOf="@+id/frame_register"
+        app:layout_constraintTop_toTopOf="@+id/frame_register" />
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_register"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/emilys_candy"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/username_register"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text_register"
+        android:layout_alignStart="@+id/frame_register"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/emilys_candy"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:letterSpacing="0.1"
+        android:scaleType="fitStart"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/pass_register"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/username_register"
+        android:layout_alignStart="@+id/frame_register"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/emilys_candy"
+        android:hint="@string/pass"
+        android:inputType="textPassword"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/phone_register"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pass_register"
+        android:layout_alignStart="@+id/frame_register"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/emilys_candy"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dob_register"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text_register"
+        android:layout_alignEnd="@+id/frame_register"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/emilys_candy"
+        android:gravity="center"
+        android:hint="@string/dob"
+        android:inputType="date"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob_register"
+        android:layout_alignEnd="@+id/frame_register"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="120dp"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/checkbox_male"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:buttonTint="@color/border"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/checkbox_male"
+            android:background="@drawable/ic_male" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/male"
+        android:layout_alignEnd="@+id/frame_register"
+        android:layout_marginEnd="125dp"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/checkbox_female"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:buttonTint="@color/border"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/checkbox_female"
+            android:background="@drawable/ic_female" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/female"
+        android:layout_alignEnd="@+id/frame_register"
+        android:layout_marginEnd="125dp"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/checkbox_gay"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:buttonTint="@color/border"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/checkbox_gay"
+            android:background="@drawable/ic_gay" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_exit_register"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/phone_register"
+        android:layout_alignStart="@+id/frame_register"
+        android:layout_alignBottom="@+id/frame_register"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_return"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/btn_finish_register"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/phone_register"
+        android:layout_alignEnd="@+id/frame_register"
+        android:layout_alignBottom="@+id/frame_register"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_login"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/frame_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/choose_dob"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/date_now"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/emilys_candy"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:text="June 1, 2001"
+            android:textColor="@color/dark_green"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/pick_month"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                app:np_dividerColor="@color/dark_green"
+                app:np_dividerDistance="60dp"
+                app:np_dividerThickness="4dp"
+                app:np_max="12"
+                app:np_min="1"
+                app:np_selectedTextColor="@color/black"
+                app:np_selectedTextSize="22dp"
+                app:np_textColor="@color/black"
+                app:np_textSize="18dp" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/pick_day"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:np_dividerColor="@color/dark_green"
+                app:np_dividerDistance="60dp"
+                app:np_dividerThickness="4dp"
+                app:np_min="1"
+                app:np_selectedTextColor="@color/black"
+                app:np_selectedTextSize="22dp"
+                app:np_textColor="@color/black"
+                app:np_textSize="18dp" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/pick_year"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                app:np_dividerColor="@color/dark_green"
+                app:np_dividerDistance="60dp"
+                app:np_dividerThickness="4dp"
+                app:np_min="1900"
+                app:np_selectedTextColor="@color/black"
+                app:np_selectedTextSize="22dp"
+                app:np_textColor="@color/black"
+                app:np_textSize="18dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/frame_dob"
+        android:layout_alignEnd="@+id/frame_dob"
+        android:layout_alignBottom="@+id/frame_dob"
+        android:background="@color/no_color"
+        android:fontFamily="@font/emilys_candy"
+        android:hint="@string/btn_done"
+        android:textColorHint="@color/black"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="550dp"
+        android:height="300dp">
+        <shape>
+            <solid android:color="@color/white"></solid>
+            <stroke
+                android:width="5dp"
+                android:color="@color/blue" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+<!--line-->
+    <item
+        android:width="550dp"
+        android:height="4dp"
+        android:top="55dp">
+        <shape>
+            <solid android:color="@color/blue" />
+        </shape>
+    </item>
+
+<!--arrow-->
+    <item
+        android:width="30dp"
+        android:height="30dp"
+        android:top="42dp"
+        android:left="-14dp"
+        android:gravity="start">
+        <rotate android:fromDegrees="45">
+            <shape>
+                <solid android:color="@color/blue"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:width="30dp"
+        android:height="30dp"
+        android:top="42dp"
+        android:right="-15dp"
+        android:gravity="end">
+        <rotate android:fromDegrees="45">
+            <shape>
+                <solid android:color="@color/blue"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:width="540dp"
+        android:height="4dp"
+        android:gravity="bottom|center"
+        android:bottom="55dp">
+        <shape>
+            <solid android:color="@color/bg_frame" />
+        </shape>
+    </item>
+
+</layer-list>

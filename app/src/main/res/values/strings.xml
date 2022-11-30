@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MiuMiu</string>
+    <string name="welcome">Welcome to MiuMiu</string>
+    <string name="phone">Phone Number</string>
+    <string name="pass">Password</string>
+    <string name="forget"><u>Forgot password?</u></string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="dob">Date of birth</string>
+    <string name="btn_done">Done</string>
+    <string name="emilys_candy"></string>
+</resources>
